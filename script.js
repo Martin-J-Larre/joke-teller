@@ -2,7 +2,7 @@ const btn = document.getElementById('btn');
 const audioElement = document.getElementById('audio');
 
 
-const test = (joke) => { 
+const tellMe = (joke) => { 
     VoiceRSS.speech({
         key: '42dc47d8b22740028e66c57dd526b09e',
         src: joke,
@@ -26,11 +26,16 @@ const getJokes = async () => {
         } else {
             joke = data.joke;
         }
-        console.log("Joke", joke);
+        tellMe(joke)
+        toggleBtn();
     } catch (err) {
-
         console.log("Error",err);
     }
-    test(joke)
 }
-getJokes();
+
+const toggleBtn = () => { 
+    btn.disabled = !btn.disabled;
+}
+
+btn.addEventListener('click', getJokes);
+audioElement.addEventListener('ended', toggleBtn);
