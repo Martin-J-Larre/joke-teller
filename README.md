@@ -1,6 +1,6 @@
 # Joke teller
 
-In this project you can push the button and the robot will tell you a Joke by audio and this joke is feching from a API.
+In this project you can push the button and the robot will tell you a joke fetched from an API and transformed to audio.
 
 ## My process
 
@@ -8,7 +8,6 @@ In this project you can push the button and the robot will tell you a Joke by au
 
 - Semantic HTML5 markup
 - CSS 
-  - Flexbox
 - JavaScript 
   - ES6
   - Fetch Api
