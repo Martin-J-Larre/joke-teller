@@ -8,7 +8,7 @@ const tellMe = (joke) => {
         src: joke,
         hl: 'en-us',
         v: 'Linda',
-        r: 0, 
+        r: -2, 
         c: 'mp3',
         f: '44khz_16bit_stereo',
         ssml: false
